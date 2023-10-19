@@ -642,8 +642,8 @@ footer > span {
   .home-banner-para {
     text-align: justify;
     word-break: keep-all;
-    word-wrap: break-all;
-    width: 85%;
+    word-wrap: break-word;
+    width: 90%;
   }
   .home-banner > img {
     width: 100% !important;
