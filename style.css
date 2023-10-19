@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat" , sans-serif !important;
 }
 nav {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -16,6 +16,9 @@ nav {
   border-bottom-right-radius: 5px;
   margin-top: 0 !important;
   background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
 }
 .contact_btn {
   color: var(--white-50, #fff);
@@ -565,6 +568,38 @@ footer > span {
   color: #000;
   text-decoration: none;
  
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+} 
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-bottom-color: #FF3D00;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @media only screen and (max-width: 990px) {
   .navbar-responsive-menu {

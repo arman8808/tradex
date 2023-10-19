@@ -47,3 +47,16 @@ const windowPathname=window.location.pathname
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
   }
+  function showLoader() {
+    document.getElementById('loader').style.display = 'block';
+}
+
+function hideLoader() {
+    document.getElementById('loader').style.display = 'none';
+}
+
+// Simulate loading time
+setTimeout(function() {
+    hideLoader(); // Hide the loader when content is loaded
+    document.getElementById('content').style.display = 'block'; // Display the content
+}, 3000); // Adjust the time as needed
